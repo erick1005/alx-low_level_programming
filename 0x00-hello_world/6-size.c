@@ -1,3 +1,9 @@
+/**
+ * main - doesnt take in any parameters
+ *
+ * Return: returns no value
+ */
+
 #include <stdio.h>
 
 int main(void)
@@ -13,7 +19,6 @@ int main(void)
 	printf("Size of a long int: %lu. byte(s)\n", (unsigned long)sizeof(x));
 	printf("Size of a long long int: %lu. byte(s)\n", (unsigned long)sizeof(y));
 	printf("Size of a float: %lu. byte(s)\n", (unsigned long)sizeof(z));
-	
-	return(0);
+	return (0);
 
 }
