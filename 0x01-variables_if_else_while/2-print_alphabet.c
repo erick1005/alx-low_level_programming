@@ -12,6 +12,7 @@ int main(void)
 	for (str = 'a'; str <= 'z'; str++)
 	{
 		putchar(str);
+		putchar('\0');
 	}
 	return (0);
 }
