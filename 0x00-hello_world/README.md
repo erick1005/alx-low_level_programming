@@ -6,3 +6,4 @@
 5-C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line using printf
 6- C program that prints the size of various types on the computer it is compiled and run on; on both 32 and 64 bit comps use (%lu only 64bit)
 100- a script that generates the assembly code (Intel syntax) of a C code and save it in an output file
+101- C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
