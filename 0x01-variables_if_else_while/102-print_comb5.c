@@ -10,18 +10,18 @@ int main(void)
 {
 	int a, b, x, y;
 
-	for(a = 0; a <= 9; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		for(b = 0; b <= 9; b++)
+		for (b = 0; b <= 9; b++)
 		{
 			putchar(a + '0');
 			putchar(b + '0');
 			putchar(' ');
 		}
 	}
-	for(x = 0; x <= 9; x++)
+	for (x = 0; x <= 9; x++)
 	{
-		for(y = 0; y <= 9; y++)
+		for (y = 0; y <= 9; y++)
 		{
 			putchar(x + '0');
 			putchar(y + '0');
