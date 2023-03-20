@@ -17,6 +17,8 @@ int main(void)
 			putchar(a + '0');
 			putchar(b + '0');
 			putchar(' ');
+			if (a == 9 && b == 8)
+				break;
 		}
 	}
 	for (x = 0; x <= 9; x++)
@@ -25,6 +27,8 @@ int main(void)
 		{
 			putchar(x + '0');
 			putchar(y + '0');
+			if (x == 9 && y == 9)
+				break;
 			putchar(',');
 			putchar(' ');
 		}
