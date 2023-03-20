@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - uses fwrites
+ * main - start of the programme, uses fwrites
  *
- * Return: returns zero
+ * Return: returns 1 error
  *
  */
 int main(void)
 {
-	char c[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19 \n";
 
-	fwrite(c,sizeof(char), sizeof(c), stderr);
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
