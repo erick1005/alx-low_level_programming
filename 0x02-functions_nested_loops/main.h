@@ -1,16 +1,17 @@
-#include <stdio.h>
+#ifndef MY_FUNCTIONS_H
+#define MY_FUNCTIONS_H
+#include "main.h"
 
-int print_putchar(void);
-int print_alphabet();
+int _putchar(char str);
+void print_alphabet(void);
 
-int print_alphabet()
+void print_alphabet(void)
 {
-	char str[]={a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}
+	char str;
 
-	int i;
-	for (i = 'a'; i <= 'z'; i++)
+	for (str = 'a'; str <= 'z'; str++)
 	{
-		putchar(str[i]);
+		putchar(str);
 	}
 	putchar('\n');
 }
