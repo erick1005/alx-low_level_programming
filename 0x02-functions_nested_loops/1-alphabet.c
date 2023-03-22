@@ -3,17 +3,17 @@
 /**
  * main - begining of the programme
  *
- * Return: 0 for success
+ * Return: void
  */
 
 void print_alphabet(void)
 {
-	char str;
+	char s;
 
-	for (str = 'a'; str <= 'z'; str++)
+	for (s = 'a'; s <= 'z'; s++)
 	{
-		putchar(str);
+	_putchar(s);
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
+
 }
