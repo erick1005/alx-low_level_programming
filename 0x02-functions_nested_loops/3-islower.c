@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _islower - checks the character
+ * _islower - checks the character
  *
  * Return:1 for success or 0 for failure
  */
