@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * print_numbers - displays numbers
@@ -11,7 +11,7 @@ void print_numbers(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar(i + '0');
+		putchar(i + '0');
 	}
-	_putchar('\n');
+	putchar('\n');
 }
