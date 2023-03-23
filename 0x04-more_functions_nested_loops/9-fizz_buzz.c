@@ -14,21 +14,25 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s ", a);
+			printf("%s", c);
+			printf(" ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s ", b);
+			printf("%s", b);
+			printf(" ");
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("%s ", c);
+			printf("%s", a);
+			printf(" ");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+			printf(" ");
 		}
 	}
 	printf("\n");
