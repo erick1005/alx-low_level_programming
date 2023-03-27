@@ -15,19 +15,20 @@ void puts_half(char *str)
 	{
 		int i;
 
-		for (i = size / 2; i <= size; i++)
+		for (i = size / 2; i < size; i++)
 		{
 			putchar(str[i]);
 		}
+		putchar('\n');
 	}
 	else
 	{
 		int j;
 
-		for (j = (size - 1) / 2; j <= size; j++)
+		for (j = (size - 1) / 2; j < size; j++)
 		{
 			putchar(str[j]);
 		}
+		putchar('\n');
 	}
-	putchar('\n');
 }
