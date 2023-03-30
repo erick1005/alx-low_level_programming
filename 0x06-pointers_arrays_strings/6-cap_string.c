@@ -9,16 +9,22 @@
  */
 char *cap_string(char *str)
 {
-	char i;
+	int i = 0;
 
-	while (*str)
+	while (str[i])
 	{
-		if (isspace((unsigned char)i) && islower((unsigned char)*str))
-		{
-			*str = (char)toupper((unsigned char)*str);
-		}
-		i = *str;
-		str++;
+	while (str[i] >= 'A' && str[i] >= 'Z')
+		i++;
+
+		if (str[i - 1] == ' ' || str[i - 1] == '\t'
+				|| str[i - 1] == '\n' || str[i - 1] == ','
+				|| str[i - 1] == ';' || str[i - 1] == '.'
+				|| str[i - 1] == '!' || str[i - 1] == '?'
+				|| str[i - 1] == '"' || str[i - 1] == '('
+				|| str[i - 1] == ')' || str[i - 1] == '{'
+				|| str[i - 1] == '}' || i == 0)
+			str[i] -= 32;
+		i++;
 	}
 	return (str);
 }
