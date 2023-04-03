@@ -10,5 +10,6 @@
 char *_strchr(char *s, char c)
 {
 	char *ch = strchr(s, c);
+
 	return (ch);
 }
