@@ -6,3 +6,5 @@
 5- a function that locates a substring
 6- a function that prints the chessboard
 7-a function that prints the sum of the two diagonals of a square matrix of integers.
+100-a function that sets the value of a pointer to a char.
+101-a file that contains the password for the crackme2 executable.
