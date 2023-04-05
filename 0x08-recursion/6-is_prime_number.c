@@ -1,5 +1,6 @@
 #include "main.h"
 
+int _prime(int n, int i);
 /**
  * is_prime_number - entry
  * @n: input
@@ -7,14 +8,28 @@
  */
 int is_prime_number(int n)
 {
-	int j;
+	return (_prime(n, 1));
+}
 
+/**
+ * _prime - checks if n is prime
+ * @n: input
+ * @i: iteration
+ * Return: prime number
+ */
+int _prime(int n, int i)
+{
 	if (n <= 1)
-		return (0);
-	for (j = 2; j * j <= n; j++)
 	{
-		if (n % j == 0)
-			return (0);
+		return (0);
 	}
-	return (1);
+	if (n % i == 0 && i > 1)
+	{
+		return (0);
+	}
+	if ((n / i) < i)
+	{
+		return (1);
+	}
+	return (_prime(n, i + 1));
 }
