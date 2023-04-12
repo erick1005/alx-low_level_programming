@@ -18,7 +18,8 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	do {
+	while (a < ac)
+	{
 		while (av[a][b])
 		{
 			t++;
@@ -26,7 +27,7 @@ char *argstostr(int ac, char **av)
 		}
 		b = 0;
 		a++;
-	} while (a < ac);
+	}
 
 	cr = malloc((sizeof(char) * t) + ac + 1);
 
