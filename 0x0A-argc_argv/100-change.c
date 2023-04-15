@@ -9,25 +9,41 @@
  */
 int main(int argc, char *argv[])
 {
-	int totalsum, i;
+	int min_coins;
+	int totalsum = 0;
 
-	argv[] = {25, 10, 5, 2, 1};
+	min_coins = atoi(argv[1]);
 
-	int min_coins = sizeof(int)(argv) / sizeof(int);
-	int count = 0;
-
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
+	while (min_coins > 0)
 	{
-		for (i = 0; i < min_coins; i++)
+		totalsum++;
+		if ((min_coins - 25) >= 0)
 		{
-			count += amount / atoi(argv[i]);
-			amount %= atoi(argv[i]);
+			min_coins -= 25;
+			continue;
 		}
+		if ((min_coins - 10) >= 0)
+		{
+			min_coins -= 10;
+			continue;
+		}
+		if ((min_coins - 5) >= 0)
+		{
+			min_coins -= 5;
+			continue;
+		}
+		if ((min_coins - 2) >= 0)
+		{
+			min_coins -= 2;
+			continue;
+		}
+		min_coins--;
 	}
-	printf("%d\n", count);
+	printf("%d\n", totalsum);
+	return (0);
 }
