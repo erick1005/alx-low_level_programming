@@ -12,13 +12,14 @@ int main(int argc, char *argv[])
 	int min_coins;
 	int totalsum = 0;
 
-	min_coins = atoi(argv[1]);
-
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
+	min_coins = atoi(argv[1]);
+
 	while (min_coins > 0)
 	{
 		totalsum++;
