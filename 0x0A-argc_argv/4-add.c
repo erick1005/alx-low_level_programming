@@ -10,7 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i;
+	unsigned int sum = 0;
 	unsigned int num;
 	char *s;
 
@@ -18,20 +19,24 @@ int main(int argc, char *argv[])
 		{
 			for (i = 1; i < argc; i++)
 			{
-			s = argv[i];
+				s = argv[i];
 
-			for (num = 0; num < strlen(s); num++)
-			{
-				if (s[num] < '0' || s[num] > '9')
+				for (num = 0; num < strlen(s); num++)
 				{
-					printf("Error\n");
-					return (1);
+					if (s[num] < 0 || s[num] > 9)
+					{
+						printf("Error\n");
+						return (1);
+					}
 				}
+				sum += atoi(s);
+				s++;
 			}
-			sum += atoi(s);
-			s++;
-		}
 		printf("%d\n", sum);
-	}
+		}
+		else
+		{
+			printf("0\n");
+		}
 	return (0);
 }
