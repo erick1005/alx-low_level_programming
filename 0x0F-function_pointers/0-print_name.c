@@ -1,11 +1,9 @@
 #include "function_pointers.h"
-#include <stdio.h>
-#include <stddef.h>
 
 /**
  * print_name - entry
- * @name: input
- * @f: pointer to a string characters
+ * @name: input to display
+ * @f: pointer
  * Return: nothing
  */
 void print_name(char *name, void (*f)(char *))
