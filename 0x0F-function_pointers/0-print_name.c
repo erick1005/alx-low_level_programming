@@ -8,7 +8,7 @@
  * @f: pointer to a string characters
  * Return: nothing
  */
-void print_name(char *name, void __attribute__ ((unused))(*f)(char *))
+void print_name(char *name, void (*f)(char *))
 {
-	printf("%s\n", name);
+	f(name);
 }
