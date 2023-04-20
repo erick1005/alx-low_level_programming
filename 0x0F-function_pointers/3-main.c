@@ -10,21 +10,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*optrn)(int, int);
+	int (*operator)(int num1, int num2);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	optrn = get_op_func(argv[2]);
+	operator = get_op_func(argv[2]);
 
-	if (!optrn)
+	if (!operator)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n", optrn(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", operator(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 
 }
