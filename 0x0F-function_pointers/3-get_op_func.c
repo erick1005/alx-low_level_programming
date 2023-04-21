@@ -9,7 +9,6 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	int i;
 
 	op_t ops[] = {
 		{"+", op_add},
@@ -20,9 +19,7 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 		};
 
-	if (*s != '+' && *s != '-' && *s != '*' && *s != '/' && *s != '%')
-        	return (NULL);
-
+	int i;
 
 	for (i = 0; i < 5; i++)
 	{
