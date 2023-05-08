@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 
 	while (characters == 1024)
 	{
-		characters == read(file_src, buffs, 1024);
+		characters = read(file_src, buffs, 1024);
 
 		if (characters == -1)
 			error(-1, 0, argv);
